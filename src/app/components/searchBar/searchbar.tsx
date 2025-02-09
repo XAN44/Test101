@@ -69,7 +69,7 @@ function Searchbar() {
   }, [search]);
 
   return (
-    <div className="pt-3">
+    <div className="pt-3 ">
       <div className="px-6 py-4 w-full flex items-center justify-center">
         <div className="relative flex items-center w-full mdx:w-96">
           <FaMagnifyingGlass className="absolute left-3 text-gray-500" />
@@ -86,7 +86,7 @@ function Searchbar() {
         </div>
       </div>
 
-      <div className="w-full mdx:w-96 mx-auto flex flex-col text-white absolute left-1/2 transform -translate-x-1/2 max-h-96 overflow-y-auto scrollbar-hide">
+      <div className="w-full mdx:w-96 mx-auto flex flex-col text-white bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 max-h-96 overflow-y-auto scrollbar-hide z-50 rounded-lg">
         {loading && <div className="text-center py-4">กำลังโหลด...</div>}
 
         {noResults && !loading && (
